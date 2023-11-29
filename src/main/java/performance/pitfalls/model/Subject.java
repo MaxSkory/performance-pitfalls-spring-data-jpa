@@ -34,7 +34,7 @@ public class Subject {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     /**
-     * uncomment it to get N/M+1
+     * uncomment to get N/M+1
      * @Transactional in service method requires.
      */
 //    @BatchSize(size = 10)

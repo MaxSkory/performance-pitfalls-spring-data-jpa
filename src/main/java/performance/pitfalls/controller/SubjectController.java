@@ -28,12 +28,6 @@ public class SubjectController {
         return result;
     }
 
-    //    @GetMapping
-//    public void getAll(Pageable pageable) {
-//        long startTime = System.currentTimeMillis();
-//        List<Subject> subjectsFromDb = subjectService.getAll(pageable);
-//    }
-
     @GetMapping("/lock")
     public String lock(@RequestParam Long time) {
         subjectService.lock(time);
